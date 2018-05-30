@@ -71,15 +71,52 @@
 
 ## Vocabulary words
 * ##### Box Model
- - a model that shows the properties of how space around an element is assigned and manipulated with CSS.
+ - a model that shows the properties of how space around an element is assigned and manipulated with [CSS](#css).
 * ##### CSS
  - Cascading style sheets
+* ##### DOM
+ - 'Document Object Model', the DOM is an abstraction of structured text. It's a specific instance of any given HTML code that can be altered dynamically without changing the underlying code.
+ - Elements in the HTML are considered 'nodes' of the DOM. The problem with the standard DOM is that for websites that load large amounts of objects (e.g. twitter, pinterest), the DOM then has wayyyy too many nodes, which makes it difficult to interact with efficiently.
+* ##### Environment
+ - A combination of the project dependencies.
 * ##### Feature branches
  - branches specifically for testing new features.
+* ##### Functional programming
+ - the use of basic functions as its building blocks instead of objects
+ - e.g. `var saySomething = function(whatToSay){
+   alert(whatToSay);
+   };`
+ - organizes an application around its actions.
 * ##### Inheritance
  - The process by which child elements receive the same properties of the parent elements
 * ##### Inline style
- - Style that is added directly into the HTML (e.g. `<em>`, `<strong>`). These will always take precedence over CSS styling. 
+ - Style that is added directly into the HTML (e.g. `<em>`, `<strong>`). These will always take precedence over CSS styling.
+* ##### JSX
+ - this is a [preprocessor](#preprocessor) that adds special syntax capabilities to JavaScript.
+ - This is not inherently understood by the browser and must be [transpiled](#transpiler) before use.
+* ##### loaders
+ - the part of a program that is responsible for loading programs and libraries.
+* ##### Minify
+ - Minified code is the process of removing unnecessary characters (e.g. whitespace, comments, etc.) that humans need to read code but computers do not to reduce file size.
+* ##### Module bundler
+ - A tool that collects source code and dependency code and concatenates it into a central file
+ - This is done to decrease load time
+ - Most bundlers will also [minify](#minify) code
+* ##### Object-oriented programming
+ - The act of using objects to encapsulate data.
+ - e.g. `function Contact(first,last){
+   this.firstName = first;
+   this.lastName = last;
+   this.addresses = [];
+   }`
+ - organizes logic around the information that the application manages.
+* ##### Package manager
+ - A tool to manage dependencies.
+ - npm is the most common, but yarn is also commonly used in the industry.
+* ##### Plugins
+ - a software component which adds a specific feature to an existing program.
+* ##### Preprocessor
+ - a program that modifies data to conform to the input requirements of another program.
 * ##### Property
  - The characteristics a CSS rule alters (e.g. color, font size)
 * ##### Rule
@@ -88,5 +125,15 @@
  - The part of a CSS rule that determines which HTML element the rule applies to (e.g. class/id/tag)
 * ##### Self-closing element
  - an HTML element that doesn't require a closing tag.
+* ##### Transpiler
+ - a compiler that turns the source code in a given language into the equivalent source code in another language.
 * ##### Value
- - The attribute a CSS rule applies to the specified property.
+ - The attribute a [CSS](#css) rule applies to the specified property.
+* ##### Virtual DOM
+ - an abstraction of the HTML DOM. considered React's local and simplified copy of the HTML DOM.
+ - This is faster and better than the regular DOM because it doesn't need to communicate with the browser in order to make its changes.
+ - React can calculate changes between the true DOM and the virtual DOM and update the true DOM to match the virtual. This is called *reconciliation*.
+* ##### Webpack
+ - A type of [module bundler](#module-bundler).
+ - Has flexible configuration and supports [plugins](#plugins) and [loaders](#loaders)
+ - Has [development server](#development-server) feature.
