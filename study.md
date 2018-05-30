@@ -61,11 +61,11 @@
  - When you're trying to style a string of text inline.
 * #### When would you use a div but not a span?
  - When you're styling a block element.
-* What different options are available when using floats?
+* #### What different options are available when using floats?
  - you can get block elements to sit inline.
-* What can be accomplished with floats?
+* #### What can be accomplished with floats?
  - text wrapping.
-* What's the difference between margin and padding?
+* #### What's the difference between margin and padding?
  - Margin is the whitespace between the element's edges and the boundary of the website and padding is the whitespace between the element and its own border.
 
 
@@ -76,6 +76,10 @@
  - Cascading style sheets
 * ##### Feature branches
  - branches specifically for testing new features.
+* ##### Inheritance
+ - The process by which child elements receive the same properties of the parent elements
+* ##### Inline style
+ - Style that is added directly into the HTML (e.g. `<em>`, `<strong>`). These will always take precedence over CSS styling. 
 * ##### Property
  - The characteristics a CSS rule alters (e.g. color, font size)
 * ##### Rule
