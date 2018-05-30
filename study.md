@@ -67,11 +67,46 @@
  - text wrapping.
 * #### What's the difference between margin and padding?
  - Margin is the whitespace between the element's edges and the boundary of the website and padding is the whitespace between the element and its own border.
+* #### What are the rules of specificity? How do they effect CSS selectors?
+ - More specific selectors take precedence.
+* #### Why is inline CSS less preferable than CSS stylesheets?
+ - It invalidates the power of CSS.
+* #### How does CSS inheritance work?
+ - nested/child elements receive the same properties of the parent elements.
+* #### What is the difference between a media feature and media type?
+ - media feature is a property of a media type (i.e. The screen's width), media type is the type of device used to view the content
+* #### What does the term viewport mean?
+ - the tool that the user is viewing content with
+* #### With your partner, discuss some of the benefits of media queries and responsive design. Why is it important?
+ - it makes sites more usable/readable on mobile devices.
+* #### What setup needs to occur in order to use Bootstrap elements in a project?
+ - Depends on the project. In intro, you link the style sheet via URL in the head tag of the HTML file. In webpacks, you save it as a dependency and import it from node_modules in one of your other files.
+* #### How do we add a Bootstrap component into our own project?
+ - we call on the classes and IDs specified in the Bootstrap documentation.
+* #### Where must Bootstrap grid columns reside?
+ - Bootstrap columns must be child elements in a div with the class `row`
+* #### How many columns can fit in each grid row?
+ - up to 12 if the column width is set to 1. The column widths must sum to 12.
+* #### What is the difference between the classes col-md-4 and col-xs-4?
+ - they refer to media query [breakpoints](#Breakpoint).
 
+* #### What is the difference between a framework and a library? Which is React? How can you tell?
+ - The difference between a framework and a library is that a framework dictates the way in which you write your program, i.e. it *frames* and boxes in your project. A library is a set of tools that you can use that generally focus on a single functionality that you can reuse but not extend.
+ - React is a library. It doesn't coerce the architecture of the program, just changes the methods you use to build within a framework.
+* #### What is the virtual DOM? How does React use it? What benefits does it offer?
+ - The virtual DOM is kind of abstract, simplified version of the HTML DOM that doesn't need to communicate with the browser in order to make changes.
+ - (not sure about this) React uses it by calculating the differences between the virtual and literal DOM and updating the literal DOM to match the virtual.
+* #### Why might a developer choose React over another library or framework? What type of projects do you think are best suited to the React library?
+ - Because of React's ability to create a virtual DOM, it works best for single-page websites where data is constantly being fetched.
 
 ## Vocabulary words
 * ##### Box Model
  - a model that shows the properties of how space around an element is assigned and manipulated with [CSS](#css).
+* ##### Breakpoint
+ - The point at which a [media query](#media-query)'s condition becomes true.
+* ##### CDN
+ - stands for Content Delivery Network
+ - a network of servers that delivers content to users that can be invoked by linking to its CDN location.
 * ##### CSS
  - Cascading style sheets
 * ##### DOM
@@ -81,12 +116,21 @@
  - A combination of the project dependencies.
 * ##### Feature branches
  - branches specifically for testing new features.
+* ##### Framework
+ - The code that dictates the architecture of your project that are pre-built tools.
+* ##### Front-End
+ - The portion of a website interacted with by the user.
+* ##### Front-End Framework
+ - pre-built code that assists us in creating the front end of our website.
 * ##### Functional programming
  - the use of basic functions as its building blocks instead of objects
  - e.g. `var saySomething = function(whatToSay){
    alert(whatToSay);
    };`
  - organizes an application around its actions.
+* ##### Hot module replacement
+ - also known as HMR
+ - when enabled, updated JavaScript modules are automatically bundled and served by webpack and its dev server.
 * ##### Inheritance
  - The process by which child elements receive the same properties of the parent elements
 * ##### Inline style
@@ -94,8 +138,15 @@
 * ##### JSX
  - this is a [preprocessor](#preprocessor) that adds special syntax capabilities to JavaScript.
  - This is not inherently understood by the browser and must be [transpiled](#transpiler) before use.
+* ##### Library
+ - Reusable pieces of code that are used without any hooks for you to extend it. The library will usually function on a single piece of functionality.
 * ##### loaders
  - the part of a program that is responsible for loading programs and libraries.
+* ##### Media query
+ - A block of CSS rules that only apply when the screen the site/app is being viewed from is a certain size.
+* ##### Media types
+ - The type of media device the user is viewing content with.
+ e.g. print, screen, handheld, etc.
 * ##### Minify
  - Minified code is the process of removing unnecessary characters (e.g. whitespace, comments, etc.) that humans need to read code but computers do not to reduce file size.
 * ##### Module bundler
@@ -119,6 +170,11 @@
  - a program that modifies data to conform to the input requirements of another program.
 * ##### Property
  - The characteristics a CSS rule alters (e.g. color, font size)
+* ##### Pure functions
+ - a function whose return values are determined using *only* input values and never alter external state or application data.
+ - React components must always be pure and cannot alter their props; Props are read-only.
+* ##### Responsive design
+ - An approach to web design providing the best view and navigation for a given screen size/[viewport](#viewport).
 * ##### Rule
  - A block of CSS that details the stylistic instructions applied to an HTML element.
 * ##### Selector
@@ -129,6 +185,8 @@
  - a compiler that turns the source code in a given language into the equivalent source code in another language.
 * ##### Value
  - The attribute a [CSS](#css) rule applies to the specified property.
+* ##### Viewport
+ - The tool a user is viewing content with. e.g. browser, tablet, phone, etc.
 * ##### Virtual DOM
  - an abstraction of the HTML DOM. considered React's local and simplified copy of the HTML DOM.
  - This is faster and better than the regular DOM because it doesn't need to communicate with the browser in order to make its changes.
