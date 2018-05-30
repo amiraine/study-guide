@@ -34,11 +34,11 @@
 * #### Why are READMEs important?
  - documenting your work and allowing other people to download and use your program effectively.
 * #### What sections should be included in one? Why?
- - title, author, installation instructions, any known bugs, and copyright related information.
- - title and author for identifying the project
- - installation so other people can download and use your program
- - bugs so that you show you're aware of your projects flaws and also so user doesn't panic when the program breaks
- - Copyright info so your project can't be plagiarized.
+  - title, author, installation instructions, any known bugs, and copyright related information.
+  - title and author for identifying the project
+  - installation so other people can download and use your program
+  - bugs so that you show you're aware of your projects flaws and also so user doesn't panic when the program breaks
+  - Copyright info so your project can't be plagiarized.
 * #### How do we format READMEs?
  - Markdown!
 * #### How do we select a specific element of our webpage to style with CSS?
@@ -88,7 +88,17 @@
 * #### How many columns can fit in each grid row?
  - up to 12 if the column width is set to 1. The column widths must sum to 12.
 * #### What is the difference between the classes col-md-4 and col-xs-4?
- - they refer to media query [breakpoints](#Breakpoint).
+ - they refer to media query [breakpoints](#breakpoint).
+* #### What is the difference between a CSS class and id? When do we use one over another?
+ - Classes are reusable, id's are single-use. You would use a class if you plan on applying the same set of rules to multiple elements. id's are sort of arbitrary unless you are trying to specify that the set of rules should only be used once.
+* #### How do we ensure our stylesheet takes precedence over Bootstrap's? Where does this occur?
+ - Source it beneath Bootstrap.
+* #### What is the % operator? How is the action it performs different than simply dividing?
+ - The % operator gives you the remainder of the division, rather than returning a potential decimal.
+* #### How can we access the JavaScript console?
+ - `ctrl + shift + j` on windows, something else on mac.
+* #### When might we see NaN
+ - 0/0 or dividing by a string or something.
 
 * #### What is the difference between a framework and a library? Which is React? How can you tell?
  - The difference between a framework and a library is that a framework dictates the way in which you write your program, i.e. it *frames* and boxes in your project. A library is a set of tools that you can use that generally focus on a single functionality that you can reuse but not extend.
