@@ -1,0 +1,23 @@
+body{
+  font-family: 'Roboto Slab', serif;
+  color: black!important;
+}
+a{
+  text-decoration: none;
+  color: #21c3ff;
+}
+h1{
+  text-align: center;
+}
+.wrapper{
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+.landing{
+  color: black;
+}
+.code{
+  font-family: monospace;
+  background-color: lightgrey;
+  border: 1px solid darkgrey;
+}
