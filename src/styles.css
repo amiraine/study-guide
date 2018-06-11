@@ -9,6 +9,12 @@ a{
 h1{
   text-align: center;
 }
+h3{
+  text-decoration: underline;
+}
+p{
+  padding-left: 2vw;
+}
 .wrapper{
   margin-left: 20vw;
   margin-right: 20vw;
@@ -18,6 +24,15 @@ h1{
 }
 .code{
   font-family: monospace;
-  background-color: lightgrey;
-  border: 1px solid darkgrey;
+  padding: 5px;
+  background-color: #EEEEEE;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+}
+.acronym{
+  background-color: rgb(89, 255, 130,.5);
+}
+.grid{
+  display: grid;
+  grid-template: 50% 50% / 50% auto;
 }
