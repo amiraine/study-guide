@@ -19,6 +19,8 @@
       <div class="glossary">
         <h1><a name="glossary" class="landing">Glossary</a></h1>
         <h2><a name="A" class="landing">A</a></h2>
+        <h3>Argument</h3>
+        <p>an item or a aribale that contains data or code.</p>
         <h2><a name="B" class="landing">B</a></h2>
         <h3>Box Model</h3>
         <p>a model that shows the properties of how space around an element is assigned and manipulated with <a href="#css">CSS</a>.</p>
@@ -69,7 +71,7 @@
         <h2><a name="J" class="landing">J</a></h2>
         <h3>JSX</h3>
         <p>Stands for <span class="acronym">JavaScript XML</span></p>
-        <p>This is a <a href="#preproccessor">preprocessor</a> that adds special syntax and capabilities to JavaScript.</p>
+        <p>This is a <a href="#preprocessor">preprocessor</a> that adds special syntax and capabilities to JavaScript.</p>
         <p>This is not inherently understood by the browser and must be <a href="#transpile">transpiled</a> before use.</p>
         <h2><a name="K" class="landing">K</a></h2>
         <h2><a name="L" class="landing">L</a></h2>
@@ -82,6 +84,8 @@
         <p>A block of CSS rules that only apply when the screen the site/app is being viewed from is a certain size.</p>
         <h3>Media Types</h3>
         <p>The type of media device that the user is viewing content with.</p>
+        <h3>Method</h3>
+        <p>An action run on a piece of data. The response of a method is called a return value.</p>
         <h3><a name="minify" class="landing">Minfy</a></h3>
         <p>Minified code is the process of removing unnecessary characters (e.g. whitespace, comments, etc.) that humans need to read code but computers do not to reduce file size.</p>
         <h3>Module Bundler</h3>
@@ -103,7 +107,7 @@
         <p>npm is the most common but yarn is also commonly used in the industry.</p>
         <h3><a name="plugins" class="landing">Plugins</a></h3>
         <p>a software component which adds a specific feature to an existing program.</p>
-        <h3><a href="preprocessor" class="landing">Preprocessor</a></h3>
+        <h3><a name="preprocessor" class="landing">Preprocessor</a></h3>
         <p>a program that modifies data to conform to the input requirements of another program.</p>
         <p>e.g. Turning SASS into vanilla CSS</p>
         <h3>Property</h3>
@@ -146,22 +150,121 @@
       </div>
       <div class="questions">
         <h1><a name="questions" class="landing">Study Questions</a></h1>
-        <h4>Click the questions to reveal the answer.</h4>
         <div class="grid">
-          <div class="q">
+          <div class="question">
             <p>How does the process of making a Git commit differ when working in pairs, versus when working independently?</p>
           </div>
-          <div class="a">
+          <div class="answer">
             <ul>
               <li>the command is different <span class="code">git commit</span> vs <span class="code">git pair</span></li>
               <li>the pair file can be opened and edited in atom, the single user git can be revised using <span class="code">git config --global user.name 'your name'</span> and <span class="code">git config --global user.email 'your email'</span></li>
             </ul>
           </div>
-          <div class="q">
-            <p>What is the significance of the word 'master' in the command $ git push al master?</p>
+          <div class="question">
+            <p>What is the significance of the word 'master' in the command <span class="code">$git push al master?</span></p>
           </div>
-          <div class="a">
+          <div class="answer">
             <p>It pushes to the master remote branch on Github as opposed to a different branch</p>
+          </div>
+          <div class="question">
+            <p>What is the difference between the local .git repository, and the repository created on Github?</p>
+          </div>
+          <div class="answer">
+            <p>the local git repository is the one you are revising when you're writing code, whereas the Github repository only stores changes when you push to it. Github repositories are available whenever you are connected to the internet and a local copy is only available to the machine you're working on.</p>
+          </div>
+          <div class="question">
+            <p>How are the local .git repository, and the repository created on Github 'connected'?</p>
+          </div>
+          <div class="answer">
+            <p>They are connected when you <span class="code">remote add</span> your repository. They are technically the same document but the remote repository needs to be periodically pushed to.</p>
+          </div>
+          <div class="question">
+            <p>Why is indentation and spacing important?</p>
+          </div>
+          <div class="answer">
+            <p>These are important for readability during review or debugging.</p>
+          </div>
+          <div class="question">
+            <p>What benefit is there to ensuring it's consistent?</p>
+          </div>
+          <div class="answer">
+            <p>so that things like opening or closing braces can be found quickly (as they are fairly common errors) and generally to write code faster.</p>
+          </div>
+          <div class="question">
+            <p>When do we indent?</p>
+          </div>
+          <div class="answer">
+            <p>at the beginning of any new declaration, inside of another element (e.g. a div)</p>
+          </div>
+          <div class="question">
+            <p>Why does indentation and spacing matter?</p>
+          </div>
+          <div class="answer">
+            <p>It can literally make or break code depending on a language, but also helps readability and debugging.</p>
+          </div>
+          <div class="question">
+            <p>What is the difference between block elements and inline elements?</p>
+          </div>
+          <div class="answer">
+            <p>A block element takes up the full width available on the webpage whereas an inline element only takes up as much space as it needs to display the style.</p>
+          </div>
+          <div class="question">
+            <p>Why is an alt attribute on an image necessary?</p>
+          </div>
+          <div class="answer">
+            <p>it's not actually necessary but it helps people with impaired vision or those who use screen readers to navigate the website.</p>
+          </div>
+          <div class="question">
+            <p>Why are READMEs important?</p>
+          </div>
+          <div class="answer">
+            <p>documenting your work and allowing other people to download and use your program effectively.</p>
+          </div>
+          <div class="question">
+            <p>What sections should be included in one? Why?</p>
+          </div>
+          <div class="answer">
+            <p>title, author, installation instructions, any known bugs, and copyright related information.</p>
+            <p>title and author for identifying the project</p>
+            <p>installation so other people can download and use your progra</p>
+            <p>bugs so that you show you're aware of your projects flaws and also so user doesn't panic when the program breaks</p>
+            <p>Copyright info so your project can't be plagiarized.</p>
+          </div>
+          <div class="question">
+            <p>Where should a CSS stylesheet reside?</p>
+          </div>
+          <div class="answer">
+            <p>inside of your project directory.</p>
+          </div>
+          <div class="question">
+            <p>How do we apply the styles created in our .css stylesheet to our .html web page?</p>
+          </div>
+          <div class="answer">
+            <p>in the most basic way, link your stylesheet in the <span class="code"><\head></span> tag of your HTML file.</p>
+          </div>
+          <div class="question">
+            <p>What is the difference between a div and a span?</p>
+          </div>
+          <div class="answer">
+            <p>a div is a block element and a span is an inline element.</p>
+          </div>
+          <div class="question">
+
+          </div>
+          <div class="answer">
+
+          </div>
+          <div class="question">
+
+          </div>
+          <div class="answer">
+
+          </div>
+          <div class="question">
+
+          </div>
+          <div class="answer">
+
           </div>
         </div>
       </div>
