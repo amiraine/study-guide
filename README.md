@@ -1,30 +1,28 @@
-#
+# Study guide
 
-#### [subtitle] - 4/xx/2018
+#### A study guide for Epicodus material
 
-#### By **Ami**
+#### By **Ami Cooper**
 
 ## Description
+A website built in a basic webpack to review and organize notes from Epicodus lessons.
 
+## Reach goals for this project (these bullet points will be moved up into the Description section as/if they are completed)
+  * Get more lessons and notes done
+  * Add some kind of animation/flash card effect for the questions and answers.
 
-
-### Specs
-| Spec | Input | Output |
-| :-------------     | :------------- | :------------- |
-| Program takes user name | "Ami" | "Ami" |
-
-
-
-
-## Setup/Installation Requirements
-
-1. Clone from GitHub repository []
-2. Open index.html in web browser.
+## Setup/Installation Requirements (for users)
+1. Clone from GitHub repository [https://github.com/amiraine/study-guide.git]
+2. Run `install -g @angular/cli@1.6.5`
+3. Run `npm install` inside of the project root directory.s
+4. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Known Bugs
-* No known bugs at this time.
+* Certain elements pop out of their alignment at specific screen sizes
 
 ## Technologies Used
+  * Webpack
+  * CSS3
 
 ## Support and contact details
 
@@ -34,4 +32,4 @@ _Email the authors with any questions, comments, or concerns._
 
 *{This software is licensed under the MIT license}*
 
-Copyright (c) 2018 **_{Ami}_**
+Copyright (c) 2018 **_{Ami Cooper}_**
