@@ -20,7 +20,7 @@
         <h1><a name="glossary" class="landing">Glossary</a></h1>
         <h2><a name="A" class="landing">A</a></h2>
         <h3>Argument</h3>
-        <p>an item or a aribale that contains data or code.</p>
+        <p>an item or a variable that contains data or code.</p>
         <h2><a name="B" class="landing">B</a></h2>
         <h3>Box Model</h3>
         <p>a model that shows the properties of how space around an element is assigned and manipulated with <a href="#css">CSS</a>.</p>
@@ -30,10 +30,14 @@
         <h3>CDN</h3>
         <p>Stands for <span class="acronym">Content Delivery Network</span>.</p>
         <p>A network of servers that delivers content to users that can be invoked by linking to its CDN location, such as Bootstrap CSS sheets.</p>
+        <h3><a name="classbasedcomponents" class="landing">Class-based Components</a></h3>
+        <p>A component written as a class. These should only be instantiated if the component requires a state, otehrwise the component should be written as a <a href="#functionalcomponent">functional component.</a></p>
+        <h3>Container component</h3>
+        <p>A stateful component that houses both a presentational component as well as dynamic components (i.e. data fetch functions, etc.)</p>
         <h3><a name="css" class="landing">CSS</a></h3>
         <p>Stands for <span class="acronym">Cascading Style Sheets</span>.</p>
         <h2><a name="D" class="landing">D</a></h2>
-        <h3><a name="dev-server" class="landing">Development Server</a></h3>
+        <h3><a name="devserver" class="landing">Development Server</a></h3>
         <p>A development server is a type of server that is designed to facilitate the development and testing of programs, websites, software or applications for software programmers.</p>
         <h3><a name="dom" class="landing">DOM</a></h3>
         <p>Stands for <span class="acronym">Document Object Model</span>.</p>
@@ -42,6 +46,8 @@
         <h2><a name="E" class="landing">E</a></h2>
         <h3>Environment</h3>
         <p>A combination of project dependencies within which you build your program.</p>
+        <h3>Event Handler</h3>
+        <p>A <a href="#method">method</a> executed in response to an event. Usually contains the term "handler" to differentiate it from other methods.</p>
         <h2><a name="F" class="landing">F</a></h2>
         <h3>Feature Branch</h3>
         <p>A branch specifically for testing a feature</p>
@@ -51,6 +57,8 @@
         <p>The portion of a website or program that is interacted with by the user.</p>
         <h3>Front-End Framework</h3>
         <p>Pre-built code that assists in creating the front end of a website or program.</p>
+        <h3><a name="functionalcomponent" class="landing">Functional Components</h3>
+        <p>These are static components in react declared using a function. They cannot have states.</p>
         <h3>Functional Programming</h3>
         <p>The use of basic functions as the building blocks of a program instead of objects</p>
         <p>e.g. <span class="code">var saySomething = function(whatToSay){<br>
@@ -84,8 +92,9 @@
         <p>A block of CSS rules that only apply when the screen the site/app is being viewed from is a certain size.</p>
         <h3>Media Types</h3>
         <p>The type of media device that the user is viewing content with.</p>
-        <h3>Method</h3>
+        <h3><a name="method" class="landing">Method</a></h3>
         <p>An action run on a piece of data. The response of a method is called a return value.</p>
+        <p>Any method in a <a href="#classbasedcomponents">class-based component</a> is called, it must be bound using the bind method (usually in the constructor) or it will prompt an "uncaught TypeError".</p>
         <h3><a name="minify" class="landing">Minfy</a></h3>
         <p>Minified code is the process of removing unnecessary characters (e.g. whitespace, comments, etc.) that humans need to read code but computers do not to reduce file size.</p>
         <h3>Module Bundler</h3>
@@ -112,6 +121,9 @@
         <p>e.g. Turning SASS into vanilla CSS</p>
         <h3>Property</h3>
         <p>The characteristics a CSS rule alters (e.g. color, font size)</p>
+        <h3>Props</h3>
+        <p>These are properties that are accepted by react components as a special type of argument.</p>
+        <p>In <a href="#classbasedcomponents">class-based components</a>, props can only be accessed by calling <span class="code">this.props.propName</span> instead of <span class="code">props.propName</span> like functional components.</p>
         <h3>Pure Functions</h3>
         <p>a function whose return values are determined using only input values and never alter external state or application data.</p>
         <p>React components must always be pure and cannot alter their props; Props are read-only.</p>
@@ -125,12 +137,16 @@
         <p>The part of a CSS rule that determines which HTML element the rule applies to</p>
         <p>e.g. class/id/tag</p>
         <h2><a name="S" class="landing">S</a></h2>
+        <h3>State</h3>
+          <p>Data in an application that is dynamic. It refers the the current conditions or circumstances of a component and can always change. Not all components can possess states.</p>
         <h3>Self-Closing Element</h3>
           <p>an HTML element that doesn't require a closing tag.</p>
         <h2><a name="T" class="landing">T</a></h2>
         <h3><a name="transpile" class="landing">Transpiler</a></h3>
         <p>a compiler that turns the source code in a given language into the equivalent source code in another language.</p>
         <h2><a name="U" class="landing">U</a></h2>
+        <h3>Unidirectional data flow</h3>
+        <p>Data flowing in one direction of the application</p>
         <h2><a name="V" class="landing">V</a></h2>
         <h3>Value</h3>
         <p>The attribute a <a href="#css">CSS</a> rule applies to the specifed property.</p>
@@ -141,9 +157,9 @@
         <p>It is faster and better than the regular DOM because it doesn't need to communicate with the browser in order to make its changes. React can calculate changes between the true DOM and the virtual DOM and update the true DOM to match the virtual.</p>
         <h2><a name="W" class="landing">W</a></h2>
         <h3>Webpack</h3>
-        <p>A type of <a href="#module-bundler">module bundler</a>.</p>
+        <p>A type of <a href="#modulebundler">module bundler</a>.</p>
         <p>Has flexible configuration and supports <a href="#plugins">plugins</a> and <a href="#loaders">loaders</a>.</p>
-        <p>Has a <a href="#dev-server">development server </a>feature.</p>
+        <p>Has a <a href="#devserver">development server </a>feature.</p>
         <h2><a name="X" class="landing">X</a></h2>
         <h2><a name="Y" class="landing">Y</a></h2>
         <h2><a name="Z" class="landing">Z</a></h2>
